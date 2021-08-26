@@ -1,0 +1,10 @@
+
+
+starta risk-servicen
+docker run -p"8080:8080" -t daneidmark/risk:0.0.1
+
+Om du har postman client testa att ropa på dess api http://localhost:8080/risk/userId och testa att byt ut userId till lite olika idn
+
+Servicen svarar med ett json-objekt
+
+Skapa ett metod som använder RestTemplate för att göra ett GET anrop till tjänsten och deserialisera resultatet till RiskAssessment-klass.
